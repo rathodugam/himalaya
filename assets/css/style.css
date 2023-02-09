@@ -40,6 +40,11 @@ h3{
     line-height: 34px;
     font-weight: 600;
 }
+.text_white h2,
+.text_white h3,
+.text_white p{
+    color: #fff !important;
+}
 :focus-visible {
     outline: none;
 }
@@ -109,11 +114,16 @@ img {
     color: #000;
     font-weight: 700;
 }
+.secondary_1 a:hover,
 .secondary a:hover{
     background-color: #01822f;
     border: 1px solid #01822f; 
     color: #fff;
 } 
+.secondary_1 a{
+    border: 1px solid #333;
+    color: #333;
+}
 nav.navbar.navbar-expand-lg {
     padding: 0;
 }
@@ -461,10 +471,16 @@ section.testimonial:before {
     right: 0;
     z-index: 1;
 }
+.blog_img a img,
+.product_img img,
+.feature_img a img,
 .palce_img img {
     transition: all 500ms ease;
-    transform: scale(1.00);
+    transform: scale(1);
 }
+.blog_img:hover a img,
+.product_img:hover img,
+.feature_img:hover a img,
 .place_box_wrap a:hover .palce_img img {
     transform: scale(1.05);
 }
@@ -708,4 +724,188 @@ ul.info_list li i {
 
 .footer_copyrigt p {
     color: rgba(255,255,255,.5);
+}
+section.tour_sec {
+    position: relative;
+    padding: 80px 0;
+    width: 100%;
+    background: url(../images/followtoursbg.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+section.tour_sec:before {
+    position: absolute;
+    content: '';
+    background-color: #1b1d21;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5;
+}
+section.tour_sec.s_padding .container {
+    z-index: 2;
+    position: relative;
+}
+.tour_product {
+    background: #fff;
+    text-align: left;
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 13%);
+    padding: 16px;
+    margin-bottom: 30px;
+}
+.product_img img {
+    width: 100%;
+    height: 80px;
+}
+.product_text_wrap h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+.blog_text_wrap h4 a:hover,
+.product_text_wrap h3 a{
+    color: #01822f;
+}
+.product_text_wrap h3 a:hover{
+    color: #000;
+}
+.product_text_wrap .price {
+    color: #01822f;
+    font-size: 13px;
+    font-weight: 200;
+    margin: 0;
+}
+section.cta_sec {
+    background: url(../images/shape-3.webp);
+    background-color: rgb(0, 124, 44);
+    background-repeat:no-repeat;
+    background-size: cover;
+    padding: 90px 0;
+}
+
+.cta_text_wrap h2 {
+    font-size: inherit;
+    line-height: 48px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 36px;
+}
+.cta_text_wrap h3 {
+    font-size: 24px;
+    line-height: 40px;
+    color: orange;
+    font-weight: 700;
+}
+.cta_text_wrap p {
+    color: #fff;
+    font-size: 18px;
+    max-width: 690px;
+}
+.cta_btn .h_btn.primary a{
+    box-shadow: 0 10px 30px 0 rgb(0 0 0 / 10%);
+}
+.blog_wrap {
+    position: relative;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 10px 30px 0 rgb(0 0 0 / 10%);
+}
+.blog_img {
+    position: relative;
+}
+.date {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    font-size: 12px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 0 14px;
+    text-align: center;
+    background-color: #01822f;
+    z-index: 1;
+}
+.blog_text_wrap {
+    padding: 27px 40px 35px;
+}
+.blog_text_wrap h4 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    min-height: 60px;
+}
+.blog_text_wrap h4 a{
+    color: #333;
+}
+
+.slide_wrap .icon_wrap {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #f2b241;
+    text-align: center;
+    border-radius: 50%;
+    margin-bottom: 31px;
+}
+.slide_text p {
+    font-size: 24px;
+    line-height: 32px;
+    color: #fff;
+    font-weight: 500;
+}
+.author_wrap {
+    padding: 15px 0 9px 0px;
+    display: flex;
+    align-items: center;
+}
+.profile_img img {
+    border-radius: 50%;
+}
+.name_location {
+    padding: 15px 0 9px 30px;
+    min-height: 80px;
+}
+.name_location h4 {
+    color: #01822f;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+.name_location p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 2px;
+}
+span.swiper-pagination-bullet{
+    background-color: #d3e6db !important;
+}
+span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color: #00822e !important;
+}
+span.swiper-pagination-bullet {
+    height: 16px;
+    width: 16px;
+}
+.swiper-pagination{
+    text-align: end !important;
+}
+
+.testimonial_left {
+    position: absolute;
+    left: -120px;
+    top: 80px;
 }

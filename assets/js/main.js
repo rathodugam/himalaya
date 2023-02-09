@@ -5,3 +5,16 @@ $(window).scroll(function(){
     if (scroll >= 50) sticky.addClass('fixed');
     else sticky.removeClass('fixed');
   });
+
+
+// swiper slider 
+const swiper = new Swiper('.swiper', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
