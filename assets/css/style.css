@@ -479,8 +479,8 @@ section.testimonial:before {
     transform: scale(1);
 }
 .blog_img:hover a img,
-.product_img:hover img,
-.feature_img:hover a img,
+.tour_product:hover .product_img img,
+.feature_box_wrap:hover .feature_img a img,
 .place_box_wrap a:hover .palce_img img {
     transform: scale(1.05);
 }
@@ -499,6 +499,9 @@ section.testimonial:before {
 .palce_text_wrap p {
     font-size: 14px;
     color: #fff;
+}
+.palce_img img{
+    width: 100%;
 }
 
 section.feature_sec {
@@ -699,6 +702,10 @@ footer.footer_sec {
 .footer_text_wrap ul li a:hover:before {
     width: 100%;
     background-color: #2dbe6c;
+}
+.footer_logo_wrap img {
+    display: inline-block;
+    margin: 15px 10px;
 }
 ul.info_list li {
     position: relative;
@@ -908,4 +915,25 @@ span.swiper-pagination-bullet {
     position: absolute;
     left: -120px;
     top: 80px;
+}
+
+
+/* inner page  */
+section.inner_hero_sec {
+    background: url(../images/EBC-14-day.webp);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position: top center;
+    padding-top: 450px;
+}
+section.hero_sec:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0 0 0 / 10%);
+    content: "";
+    z-index: 1;
 }
