@@ -8,7 +8,7 @@ $(window).scroll(function(){
 
 
 // swiper slider 
-const swiper = new Swiper('.swiper', {
+var swiper = new Swiper('.swiper', {
     loop: true,
     pagination: {
       el: '.swiper-pagination',
@@ -17,4 +17,20 @@ const swiper = new Swiper('.swiper', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+  });
+
+  // inner slider 
+  var swiper1 = new Swiper('.inner_swiper', {
+    slidesPerView: "auto",
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: true
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+},
   });
