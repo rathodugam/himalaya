@@ -89,4 +89,14 @@ section.cta_sec .container .row .col-xl-3.col-md-3 {
     .category {
         justify-content: center;
     }
+    .accordion_wrap,
+    section.package.s_padding {
+        padding: 30px 20px;
+    }
+    .table>:not(caption)>*>*{
+        border: 1px solid #c3c3c3 !important;
+    }
+    .inner_heading {
+        padding: 0 20px;
+    }
 }
