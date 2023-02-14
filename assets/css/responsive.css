@@ -1,0 +1,22 @@
+@media only screen and (min-width: 1400px) {
+
+}
+
+@media (max-width:1024px){
+    ul.navbar-nav li {
+        padding: 0;
+    }
+    .testimonial_left {
+        position: inherit;
+    }
+}
+
+@media(max-width:991px){
+    .feature_text_wrap {
+        padding: 10px;
+    }
+    .feature_text_wrap h3 a {
+        font-size: 18px;
+        line-height: 28px;
+    }    
+}

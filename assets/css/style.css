@@ -80,7 +80,7 @@ img {
 }
 
 .container-fluid {
-    max-width: 1600px;
+    max-width: 1920px;
 }
 .container {
     max-width: 1200px;
@@ -306,6 +306,7 @@ section.notification h6 {
     box-shadow: 0 10px 30px 0 rgb(0 0 0 / 10%);
     text-align: center;
     width: 210px;
+    margin-bottom: 30px;
     display: inline-block;
     transition: all 500ms ease;
 }
@@ -1083,6 +1084,9 @@ section.sidebar_content_sec{
 }
 .sidebar_right_wrap ul.navbar-nav li {
     padding: 0;
+}
+button.navbar-toggler {
+    background: #fff;
 }
 .sidebar_right_wrap nav.navbar ul.navbar-nav li a {
     padding: 10px 20px!important;
