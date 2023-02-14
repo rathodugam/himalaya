@@ -39,15 +39,15 @@ var swiper = new Swiper('.swiper', {
 
 
   // scroll to top 
-  let mybutton = document.getElementById("scroll_top");
+  let mybutton = document.getElementById("#scroll_top");
 
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+    scroll_top.style.display = "block";
   } else {
-    mybutton.style.display = "none";
+    scroll_top.style.display = "none";
   }
 }
 function topFunction() {

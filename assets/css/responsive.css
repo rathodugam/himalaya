@@ -9,6 +9,12 @@
     .testimonial_left {
         position: inherit;
     }
+    .container{
+        max-width: 900px  !important;
+    } 
+    .feature_img a img{
+        width: 100%;
+    }
 }
 
 @media(max-width:991px){
@@ -18,5 +24,69 @@
     .feature_text_wrap h3 a {
         font-size: 18px;
         line-height: 28px;
-    }    
+    }  
+
+}
+
+@media (max-width: 767px){
+.category_box_wrap {
+    width: 240px;
+}
+.feature_img a img {
+    width: 100%;
+}
+
+.group_data_wrap table.table.table-striped tbody tr td {
+    padding: 12px;
+    line-height: 24px;
+    font-size: 14px;
+}
+.group_data_wrap table.table.table-striped {
+    width: max-content;
+}
+.about_left,
+.testimonial_left{
+    text-align: center;
+}
+.product_img img {
+    width: 100%;
+    height: 200px;
+}
+.product_text_wrap {
+    padding: 10px 0;
+}
+.tour_product {
+    min-height: 320px;
+}
+section.cta_sec .container .row .col-xl-3.col-md-3 {
+    text-align: left !important;
+    margin: 20px 0;
+}
+.tirp_logo {
+    margin-top: 30px;
+}
+.sidebar_right_wrap {
+    display: none;
+}
+}
+
+
+@media (max-width:575px){
+    .category_box_wrap {
+        width: 330px;
+    }
+    .product_img img {
+        width: 100%;
+        height: 90px;
+    }
+    .tour_product {
+        min-height: auto;
+    }
+    .releted_img a img,
+    .blog_img a img {
+        width: 100%;
+    }
+    .category {
+        justify-content: center;
+    }
 }

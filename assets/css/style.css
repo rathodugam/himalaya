@@ -391,7 +391,7 @@ section.feature_section{
 .group_data_wrap {
     border-collapse: collapse;
     box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: 5px;
 }
 table.table.table-striped thead {
@@ -1201,9 +1201,9 @@ button.navbar-toggler {
     vertical-align: middle;
     line-height: 18px;
 }
-.table_wrap {
+/* .table_wrap {
     overflow-x: auto !important;
-}
+} */
 p.table_note {
     font-size: 14px;
     font-weight: 400;
