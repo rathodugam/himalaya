@@ -19,22 +19,6 @@ var swiper = new Swiper('.swiper', {
     },
   });
 
-  // inner slider 
-  var swiper1 = new Swiper('.inner_swiper', {
-    slidesPerView: "auto",
-    slidesPerView: 3,
-    spaceBetween: 20,
-    loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: true
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true
-},
-  });
-
 
 
 
